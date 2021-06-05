@@ -69,9 +69,6 @@ Nav header start
                         </div>
                         <input type="search" class="form-control" placeholder="Search Dashboard" aria-label="Search Dashboard">
                         <div class="drop-down animated flipInX d-md-none">
-                            <!-- <form action="#">
-                        <input type="text" class="form-control" placeholder="Search">
-                    </form> -->
                         </div>
                     </div>
                 </div>

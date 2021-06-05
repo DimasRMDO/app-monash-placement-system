@@ -18,47 +18,6 @@
 
 </head>
 
-
-<!---->
-<!--<div class="placementMember index large-9 medium-8 columns content">-->
-<!--    <h3>--><?//= __('Placement Member') ?><!--</h3>-->
-<!--    <table class='table .table-bordered '>-->
-<!--        <thead>-->
-<!--            <tr>-->
-<!--                <th scope="col">--><?//= $this->Paginator->sort('member_id') ?><!--</th>-->
-<!--                <th scope="col">--><?//= $this->Paginator->sort('name') ?><!--</th>-->
-<!--                <th scope="col">--><?//= $this->Paginator->sort('email_address') ?><!--</th>-->
-<!--                <th scope="col">--><?//= $this->Paginator->sort('department_id') ?><!--</th>-->
-<!--                <th scope="col" class="actions">--><?//= __('Actions') ?><!--</th>-->
-<!--            </tr>-->
-<!--        </thead>-->
-<!--        <tbody>-->
-<!--            --><?php //foreach ($placementMember as $placementMember): ?>
-<!--            <tr>-->
-<!--                <td>--><?//= $this->Number->format($placementMember->member_id) ?><!--</td>-->
-<!--                <td>--><?//= h($placementMember->name) ?><!--</td>-->
-<!--                <td>--><?//= h($placementMember->email_address) ?><!--</td>-->
-<!--                <td>--><?//= $placementMember->has('department') ? $this->Html->link($placementMember->department->name, ['controller' => 'Department', 'action' => 'view', $placementMember->department->department_id]) : '' ?><!--</td>-->
-<!--                <td class="actions">-->
-<!--                    --><?//= $this->Html->link(__('View'), ['action' => 'view', $placementMember->member_id]) ?>
-<!--                    --><?//= $this->Html->link(__('Edit'), ['action' => 'edit', $placementMember->member_id]) ?>
-<!--                    --><?//= $this->Form->postLink(__('Delete'), ['action' => 'delete', $placementMember->member_id], ['confirm' => __('Are you sure you want to delete # {0}?', $placementMember->member_id)]) ?>
-<!--                </td>-->
-<!--            </tr>-->
-<!--            --><?php //endforeach; ?>
-<!--        </tbody>-->
-<!--    </table>-->
-<!--    <div class="paginator">-->
-<!--        <ul class="pagination">-->
-<!--            --><?//= $this->Paginator->first('<< ' . __('first')) ?>
-<!--            --><?//= $this->Paginator->prev('< ' . __('previous')) ?>
-<!--            --><?//= $this->Paginator->numbers() ?>
-<!--            --><?//= $this->Paginator->next(__('next') . ' >') ?>
-<!--            --><?//= $this->Paginator->last(__('last') . ' >>') ?>
-<!--        </ul>-->
-<!--        <p>--><?//= $this->Paginator->counter(['format' => __('Page {{page}} of {{pages}}, showing {{current}} record(s) out of {{count}} total')]) ?><!--</p>-->
-<!--    </div>-->
-<!--</div>-->
 <body>
 <!--**********************************
     Content body start
