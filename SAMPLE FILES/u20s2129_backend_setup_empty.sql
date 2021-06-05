@@ -360,6 +360,13 @@ ALTER TABLE `schedule_progress`
   ADD CONSTRAINT `schedule_progress_ibfk_1` FOREIGN KEY (`schedule_id`) REFERENCES `schedule` (`schedule_id`) ON DELETE CASCADE ON UPDATE CASCADE;
 COMMIT;
 
+--
+-- Inserting data into table `users`
+--
+INSERT INTO `users` (`email`, `password`, `created`, `modified`, `passkey`, `timeout`, `role`, `isApproved`) VALUES
+('admin@monash.edu', '$2y$10$oXu3ORUniaExuzPKTCZXg.SzgZe1pAfJcVxnbJiPb6q2DMgJuZrPu', '2021-06-05 07:25:24', '2021-06-05 07:25:47', NULL, NULL, 'admin', 1),
+('user@monash.edu', '$2y$10$b4nwS5fXILu3GA4xIqiBWeLjrV5E2n2laoSFAFpC/RPp5VTXuSu7q', '2021-06-05 07:26:07', '2021-06-05 07:26:35', NULL, NULL, 'user', 1);
+
 /*!40101 SET CHARACTER_SET_CLIENT=@OLD_CHARACTER_SET_CLIENT */;
 /*!40101 SET CHARACTER_SET_RESULTS=@OLD_CHARACTER_SET_RESULTS */;
 /*!40101 SET COLLATION_CONNECTION=@OLD_COLLATION_CONNECTION */;
